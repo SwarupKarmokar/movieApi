@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+body {
+    font-family: cursive;
+    /* background: linear-gradient(to top right, blue , black); */
+    background-color: rgb(235, 222, 222);
+}
+
+/* UTILITY CLASS  */
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.primary-btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(98, 97, 97);
+    color: white;
+    background: transparent;
+    transition: .3s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: lightgreen;
+    color: black;
+}
+/* UTILITY CLASS ENDS */
+
+
+.navbar {
+    background: #1a1a1a;
+    color: white;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 3px rgba(0,0,0,.1);
+    padding: 20px;
+}
+
+#search {
+    background: lightgray;
+    border-radius: 5px;
+    width: 500px;
+    padding: 5px;
+}
+
+
+.movie-container {
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-card img {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-card {
+    width: 23%;
+    min-height: 300px;
+}
+
+.movie-desc {
+    height: 200px;
+    overflow: auto;
+    color: white;
+    border-radius: 6px;
+    padding-inline: 10px;
+    background: #1a1a1a;
+}
+
+.movie-desc p {
+    margin-top: 10px;
+    padding-inline: 5px;
+}
+
+.rating {
+    justify-content: space-between;
+}
+
+span {
+    color: red;
+}
+
+
+
+/* MOVIE DETAILS PART START  */
+.movie-details-card {
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.left img {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.right {
+    margin-top: -250px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* MOVIE DETAILS PART ENDS */
+
+
+
+/* CART SECTION START  */
+.cart img {
+    height: 100px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+.cart {
+    margin-top: 20px;
+    justify-content: center;
+    padding-block: 10px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.1);
+}
+/* CART SECTION ENDS */
